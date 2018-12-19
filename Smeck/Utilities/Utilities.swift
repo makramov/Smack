@@ -12,3 +12,5 @@ import Foundation
 let loginVC = "goToLogin"
 let channelsVC = "sw_rear"
 let chatVC = "sw_front"
+let gotoCreateVC = "goToCreateAccount"
+let gotoChannel = "unwindToChannel"

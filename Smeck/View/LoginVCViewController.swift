@@ -21,5 +21,9 @@ class LoginVCViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: gotoCreateVC, sender: self)
+    }
+    
 }

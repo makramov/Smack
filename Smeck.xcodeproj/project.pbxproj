@@ -17,6 +17,7 @@
 		ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */; };
 		ACDC7A0921CA063C0052BFDC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0821CA063C0052BFDC /* Utilities.swift */; };
 		ACDC7A0B21CA0D080052BFDC /* LoginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0A21CA0D080052BFDC /* LoginVCViewController.swift */; };
+		ACDC7A0D21CA19300052BFDC /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0C21CA19300052BFDC /* CreateAccountVC.swift */; };
 		ACEFF70E21C9E32F005C5FC0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEFF70C21C9E32F005C5FC0 /* SWRevealViewController.m */; };
 		ACEFF70F21C9E47B005C5FC0 /* SWRevealViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = ACEFF70D21C9E32F005C5FC0 /* SWRevealViewController.h */; };
 		ACEFF71021C9E489005C5FC0 /* Smeck-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = ACEFF70B21C9E32E005C5FC0 /* Smeck-Bridging-Header.h */; };
@@ -37,6 +38,7 @@
 		ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGredient.swift; sourceTree = "<group>"; };
 		ACDC7A0821CA063C0052BFDC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		ACDC7A0A21CA0D080052BFDC /* LoginVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewController.swift; sourceTree = "<group>"; };
+		ACDC7A0C21CA19300052BFDC /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		ACEFF70B21C9E32E005C5FC0 /* Smeck-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smeck-Bridging-Header.h"; sourceTree = "<group>"; };
 		ACEFF70C21C9E32F005C5FC0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		ACEFF70D21C9E32F005C5FC0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				ACAF4D7C21C9DFC400FA1F70 /* ChatVC.swift */,
 				ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */,
+				ACDC7A0C21CA19300052BFDC /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				AC9DF4D621C9DBDD0060B89E /* AppDelegate.swift in Sources */,
 				ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */,
 				ACDC7A0921CA063C0052BFDC /* Utilities.swift in Sources */,
+				ACDC7A0D21CA19300052BFDC /* CreateAccountVC.swift in Sources */,
 				ACEFF70E21C9E32F005C5FC0 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
