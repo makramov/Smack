@@ -1,0 +1,6 @@
+framework module Pods_Smeck {
+  umbrella header "Pods-Smeck-umbrella.h"
+
+  export *
+  module * { export * }
+}

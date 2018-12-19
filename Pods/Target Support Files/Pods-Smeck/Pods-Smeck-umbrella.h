@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SmackVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SmackVersionString[];
+FOUNDATION_EXPORT double Pods_SmeckVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SmeckVersionString[];
 
