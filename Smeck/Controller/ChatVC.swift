@@ -15,11 +15,25 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        menuBTN.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        //swRevealViewController Method here
+          swRevealVC()
         
-    }
+        }
     
+    
+    //MARK: SWrevealViewControllerMethods here
+    
+    func swRevealVC () {
+        menuBTN.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        if let pangestureRecognizer = self.revealViewController()?.panGestureRecognizer() {
+            self.view.addGestureRecognizer(pangestureRecognizer)
+        }
+        
+        if let tapGestureRecognizer = self.revealViewController()?.tapGestureRecognizer() {
+            
+            self.view.addGestureRecognizer(tapGestureRecognizer)
+        }
+    }
 
 
 }

@@ -17,7 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.067021418309999997" green="1" blue="0.1224430814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -52,21 +52,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLK-bx-Q3y">
-                                <rect key="frame" x="15" y="35" width="25" height="25"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ax-vx-P3p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLK-bx-Q3y">
+                                        <rect key="frame" x="15" y="60" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="DWn-Xe-95C"/>
+                                            <constraint firstAttribute="height" constant="25" id="deU-yo-NZ8"/>
+                                        </constraints>
+                                        <state key="normal" image="smackBurger">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioa-n4-FZ0">
+                                        <rect key="frame" x="150.5" y="57.5" width="74" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.11098162960000001" green="0.70547619429999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="dGu-O5-Sf5"/>
-                                    <constraint firstAttribute="width" constant="25" id="zg2-RQ-V4w"/>
+                                    <constraint firstAttribute="bottom" secondItem="WLK-bx-Q3y" secondAttribute="bottom" constant="15" id="8MR-Jx-Ls8"/>
+                                    <constraint firstItem="Ioa-n4-FZ0" firstAttribute="centerX" secondItem="9Ax-vx-P3p" secondAttribute="centerX" id="8Xp-4W-fCb"/>
+                                    <constraint firstItem="Ioa-n4-FZ0" firstAttribute="centerY" secondItem="WLK-bx-Q3y" secondAttribute="centerY" id="VNx-f4-GfE"/>
+                                    <constraint firstAttribute="height" constant="100" id="sbf-y2-SLY"/>
+                                    <constraint firstItem="WLK-bx-Q3y" firstAttribute="leading" secondItem="9Ax-vx-P3p" secondAttribute="leading" constant="15" id="siR-u5-GRP"/>
                                 </constraints>
-                                <state key="normal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.11098162960000001" green="0.70547619429999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WLK-bx-Q3y" firstAttribute="top" secondItem="4SC-ee-Fq2" secondAttribute="top" constant="15" id="1fX-J9-s8S"/>
-                            <constraint firstItem="WLK-bx-Q3y" firstAttribute="leading" secondItem="4SC-ee-Fq2" secondAttribute="leading" constant="15" id="FAR-2x-o0J"/>
+                            <constraint firstItem="9Ax-vx-P3p" firstAttribute="leading" secondItem="4SC-ee-Fq2" secondAttribute="leading" id="ICC-hL-Rvm"/>
+                            <constraint firstItem="9Ax-vx-P3p" firstAttribute="top" secondItem="5F2-4Q-KN2" secondAttribute="top" id="air-WT-aD9"/>
+                            <constraint firstItem="9Ax-vx-P3p" firstAttribute="trailing" secondItem="4SC-ee-Fq2" secondAttribute="trailing" id="uWe-UO-a64"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4SC-ee-Fq2"/>
                     </view>
@@ -79,4 +99,7 @@
             <point key="canvasLocation" x="998" y="605"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smackBurger" width="40" height="40"/>
+    </resources>
 </document>
