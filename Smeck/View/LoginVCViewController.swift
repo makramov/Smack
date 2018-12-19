@@ -1,5 +1,5 @@
 //
-//  ChannelVC.swift
+//  LoginVCViewController.swift
 //  Smeck
 //
 //  Created by Mansur Akramov on 12/18/18.
@@ -8,21 +8,18 @@
 
 import UIKit
 
-class ChannelVC: UIViewController {
+class LoginVCViewController: UIViewController {
 
-    //outlets here
-    @IBOutlet weak var loginBTN: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.revealViewController()?.rearViewRevealWidth = self.view.frame.width - 50
     }
     
+
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "goToLogin", sender: self)
+        self.dismiss(animated: true, completion: nil)
     }
     
-    
+
 }

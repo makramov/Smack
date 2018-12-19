@@ -15,6 +15,8 @@
 		ACAF4D7D21C9DFC400FA1F70 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF4D7C21C9DFC400FA1F70 /* ChatVC.swift */; };
 		ACAF4D7F21C9DFD700FA1F70 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */; };
 		ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */; };
+		ACDC7A0921CA063C0052BFDC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0821CA063C0052BFDC /* Utilities.swift */; };
+		ACDC7A0B21CA0D080052BFDC /* LoginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0A21CA0D080052BFDC /* LoginVCViewController.swift */; };
 		ACEFF70E21C9E32F005C5FC0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEFF70C21C9E32F005C5FC0 /* SWRevealViewController.m */; };
 		ACEFF70F21C9E47B005C5FC0 /* SWRevealViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = ACEFF70D21C9E32F005C5FC0 /* SWRevealViewController.h */; };
 		ACEFF71021C9E489005C5FC0 /* Smeck-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = ACEFF70B21C9E32E005C5FC0 /* Smeck-Bridging-Header.h */; };
@@ -33,6 +35,8 @@
 		ACAF4D7C21C9DFC400FA1F70 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGredient.swift; sourceTree = "<group>"; };
+		ACDC7A0821CA063C0052BFDC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		ACDC7A0A21CA0D080052BFDC /* LoginVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewController.swift; sourceTree = "<group>"; };
 		ACEFF70B21C9E32E005C5FC0 /* Smeck-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smeck-Bridging-Header.h"; sourceTree = "<group>"; };
 		ACEFF70C21C9E32F005C5FC0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		ACEFF70D21C9E32F005C5FC0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		AC9DF4D421C9DBDD0060B89E /* Smeck */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC7A0721CA061D0052BFDC /* Utilities */,
 				ACEFF70A21C9E30A005C5FC0 /* Components */,
 				AC9DF4E921C9DC2B0060B89E /* Model */,
 				AC9DF4E821C9DC160060B89E /* View */,
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */,
+				ACDC7A0A21CA0D080052BFDC /* LoginVCViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ACDC7A0721CA061D0052BFDC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC7A0821CA063C0052BFDC /* Utilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		ACEFF70A21C9E30A005C5FC0 /* Components */ = {
@@ -264,10 +278,12 @@
 			files = (
 				ACEFF71021C9E489005C5FC0 /* Smeck-Bridging-Header.h in Sources */,
 				ACEFF70F21C9E47B005C5FC0 /* SWRevealViewController.h in Sources */,
+				ACDC7A0B21CA0D080052BFDC /* LoginVCViewController.swift in Sources */,
 				ACAF4D7D21C9DFC400FA1F70 /* ChatVC.swift in Sources */,
 				ACAF4D7F21C9DFD700FA1F70 /* ChannelVC.swift in Sources */,
 				AC9DF4D621C9DBDD0060B89E /* AppDelegate.swift in Sources */,
 				ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */,
+				ACDC7A0921CA063C0052BFDC /* Utilities.swift in Sources */,
 				ACEFF70E21C9E32F005C5FC0 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
