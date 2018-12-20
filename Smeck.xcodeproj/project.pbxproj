@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EEC32DA3B972D7F1C609A64 /* Pods_Smeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0559E1AFDF794BF690C9B014 /* Pods_Smeck.framework */; };
+		AC05041B21CB4C8100815B9B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05041A21CB4C8100815B9B /* AuthService.swift */; };
 		AC9DF4D621C9DBDD0060B89E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DF4D521C9DBDD0060B89E /* AppDelegate.swift */; };
 		AC9DF4DB21C9DBDD0060B89E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF4D921C9DBDD0060B89E /* Main.storyboard */; };
 		AC9DF4DD21C9DBDD0060B89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF4DC21C9DBDD0060B89E /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		0559E1AFDF794BF690C9B014 /* Pods_Smeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smeck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C29C3B04473261C91925CA2 /* Pods-Smeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smeck.release.xcconfig"; path = "Target Support Files/Pods-Smeck/Pods-Smeck.release.xcconfig"; sourceTree = "<group>"; };
 		8FB35F6BFCE90EEFBC43546F /* Pods-Smeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smeck.debug.xcconfig"; path = "Target Support Files/Pods-Smeck/Pods-Smeck.debug.xcconfig"; sourceTree = "<group>"; };
+		AC05041A21CB4C8100815B9B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AC9DF4D221C9DBDD0060B89E /* Smeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DF4D521C9DBDD0060B89E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9DF4DA21C9DBDD0060B89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC05041921CB4C5700815B9B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC05041A21CB4C8100815B9B /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		AC9DF4C921C9DBDD0060B89E = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		AC9DF4D421C9DBDD0060B89E /* Smeck */ = {
 			isa = PBXGroup;
 			children = (
+				AC05041921CB4C5700815B9B /* Services */,
 				ACDC7A0721CA061D0052BFDC /* Utilities */,
 				ACEFF70A21C9E30A005C5FC0 /* Components */,
 				AC9DF4E921C9DC2B0060B89E /* Model */,
@@ -284,6 +295,7 @@
 				ACDC7A0B21CA0D080052BFDC /* LoginVCViewController.swift in Sources */,
 				ACAF4D7D21C9DFC400FA1F70 /* ChatVC.swift in Sources */,
 				ACAF4D7F21C9DFD700FA1F70 /* ChannelVC.swift in Sources */,
+				AC05041B21CB4C8100815B9B /* AuthService.swift in Sources */,
 				AC9DF4D621C9DBDD0060B89E /* AppDelegate.swift in Sources */,
 				ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */,
 				ACDC7A0921CA063C0052BFDC /* Utilities.swift in Sources */,
