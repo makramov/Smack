@@ -91,6 +91,7 @@
                                             <constraints>
                                                 <constraint firstItem="A0w-Jv-V98" firstAttribute="centerY" secondItem="HMf-ia-lKV" secondAttribute="centerY" id="D7S-IJ-mRl"/>
                                                 <constraint firstItem="A0w-Jv-V98" firstAttribute="leading" secondItem="HMf-ia-lKV" secondAttribute="leading" constant="15" id="E6C-Oc-blP"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A0w-Jv-V98" secondAttribute="trailing" constant="20" symbolic="YES" id="SKS-st-tnF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,12 +156,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Asb-zw-jy6">
                                 <rect key="frame" x="62.5" y="319" width="250" height="87"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNd-vS-fVv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNd-vS-fVv" customClass="CustomButton" customModule="Smeck" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
                                         <color key="backgroundColor" red="0.38431372549019605" green="0.6705882352941176" blue="0.83921568627450982" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="5NA-K7-4Bc"/>
-                                            <constraint firstAttribute="width" constant="250" id="Qbn-d8-soL"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Qbn-d8-soL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Login">
@@ -199,7 +200,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7uv-ls-vfB">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="EYa-J1-MGI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="EYa-J1-MGI"/>
                                             <constraint firstAttribute="height" constant="50" id="FHN-Hz-UTJ"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -218,7 +219,7 @@
                                         <rect key="frame" x="0.0" y="62" width="250" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="eHt-Ag-ihz"/>
-                                            <constraint firstAttribute="width" constant="250" id="hRn-bq-qQ6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="hRn-bq-qQ6"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -337,7 +338,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z02-d4-eh1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z02-d4-eh1" customClass="CustomButton" customModule="Smeck" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.38431372549999998" green="0.6705882353" blue="0.83921568629999999" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -348,6 +349,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="LPK-4a-x4J" eventType="touchUpInside" id="kYq-zV-LzX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13d-4O-bDw">
                                 <rect key="frame" x="99" y="505" width="177" height="29"/>
@@ -355,6 +359,9 @@
                                 <state key="normal" title="Generate backgroung color">
                                     <color key="titleColor" red="0.38431372549999998" green="0.6705882353" blue="0.83921568629999999" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="generateBackgroungColorButtonPressed:" destination="LPK-4a-x4J" eventType="touchUpInside" id="Zun-Qg-bn5"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smackProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2Zw-zw-hdF">
                                 <rect key="frame" x="137.5" y="365" width="100" height="100"/>
@@ -372,6 +379,9 @@
                                 <state key="normal" title="Choose Avatar">
                                     <color key="titleColor" red="0.38431372549999998" green="0.6705882353" blue="0.83921568629999999" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseAvatarButtonPressed:" destination="LPK-4a-x4J" eventType="touchUpInside" id="CPI-9k-5Hs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -395,6 +405,10 @@
                         <viewLayoutGuide key="safeArea" id="joV-uL-cJL"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="Xqz-Ee-K65" id="sec-a6-Me4"/>
+                        <outlet property="passwordTxt" destination="51L-20-7Zr" id="JV0-0p-mYF"/>
+                        <outlet property="profileIconimg" destination="2Zw-zw-hdF" id="zyY-ls-qkh"/>
+                        <outlet property="userNameTxt" destination="62L-Eb-TpE" id="ubU-NJ-bwt"/>
                         <segue destination="yZS-vi-IZZ" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="q1m-V7-25Z"/>
                     </connections>
                 </viewController>
