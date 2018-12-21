@@ -39,7 +39,7 @@ class CreateAccountVC: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             print(name)
-                            self.performSegue(withIdentifier: gotoChannel, sender: nil)
+                            self.performSegue(withIdentifier: GOTOCHANNEL_VC, sender: nil)
                         })
                     }
                 })
@@ -53,11 +53,12 @@ class CreateAccountVC: UIViewController {
     
     //MARK: Choose Avatar button pressed
     @IBAction func chooseAvatarButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: GOTOAVATAR_VC, sender: nil)
     }
     //MARK: Close button
     @IBAction func closeButtonPressed(_ sender: UIButton) {
         
-        performSegue(withIdentifier: gotoChannel, sender: self)
+        performSegue(withIdentifier: GOTOCHANNEL_VC, sender: self)
     }
     
     

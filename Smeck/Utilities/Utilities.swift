@@ -19,12 +19,12 @@ let URL_ADDUSER = "\(BASE_URL)user/add"
 
 //segues identifiers
 
-let loginVC = "goToLogin"
-let channelsVC = "sw_rear"
-let chatVC = "sw_front"
-let gotoCreateVC = "goToCreateAccount"
-let gotoChannel = "unwindToChannel"
-
+let LOGIN_VC = "goToLogin"
+let CHANNEL_VC = "sw_rear"
+let CHAT_VC = "sw_front"
+let GOTOCREATE_VC = "goToCreateAccount"
+let GOTOCHANNEL_VC = "unwindToChannel"
+let GOTOAVATAR_VC = "goToAvatarVC"
 
 //user defaults
 

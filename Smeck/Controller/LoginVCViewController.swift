@@ -23,7 +23,7 @@ class LoginVCViewController: UIViewController {
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         
-        performSegue(withIdentifier: gotoCreateVC, sender: self)
+        performSegue(withIdentifier: GOTOCREATE_VC, sender: self)
     }
     
 }

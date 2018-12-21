@@ -15,6 +15,8 @@
 		AC9DF4DD21C9DBDD0060B89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF4DC21C9DBDD0060B89E /* Assets.xcassets */; };
 		AC9DF4E021C9DBDD0060B89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF4DE21C9DBDD0060B89E /* LaunchScreen.storyboard */; };
 		ACADD36621CC95C000F9906F /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACADD36521CC95C000F9906F /* UserDataService.swift */; };
+		ACADD36821CCAE5300F9906F /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACADD36721CCAE5300F9906F /* AvatarPickerVC.swift */; };
+		ACADD36A21CCAFA700F9906F /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACADD36921CCAFA700F9906F /* AvatarCell.swift */; };
 		ACAF4D7D21C9DFC400FA1F70 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF4D7C21C9DFC400FA1F70 /* ChatVC.swift */; };
 		ACAF4D7F21C9DFD700FA1F70 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */; };
 		ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */; };
@@ -39,6 +41,8 @@
 		AC9DF4DF21C9DBDD0060B89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9DF4E121C9DBDD0060B89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACADD36521CC95C000F9906F /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		ACADD36721CCAE5300F9906F /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		ACADD36921CCAFA700F9906F /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		ACAF4D7C21C9DFC400FA1F70 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGredient.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */,
 				ACDC7A0A21CA0D080052BFDC /* LoginVCViewController.swift */,
 				ACDC7A0C21CA19300052BFDC /* CreateAccountVC.swift */,
+				ACADD36721CCAE5300F9906F /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			children = (
 				ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */,
 				AC05041C21CB66D200815B9B /* CustomButton.swift */,
+				ACADD36921CCAFA700F9906F /* AvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				ACADD36621CC95C000F9906F /* UserDataService.swift in Sources */,
 				ACEFF70F21C9E47B005C5FC0 /* SWRevealViewController.h in Sources */,
 				ACDC7A0B21CA0D080052BFDC /* LoginVCViewController.swift in Sources */,
+				ACADD36A21CCAFA700F9906F /* AvatarCell.swift in Sources */,
 				ACAF4D7D21C9DFC400FA1F70 /* ChatVC.swift in Sources */,
 				ACAF4D7F21C9DFD700FA1F70 /* ChannelVC.swift in Sources */,
 				AC05041B21CB4C8100815B9B /* AuthService.swift in Sources */,
@@ -307,6 +314,7 @@
 				ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */,
 				AC05041D21CB66D200815B9B /* CustomButton.swift in Sources */,
 				ACDC7A0921CA063C0052BFDC /* Utilities.swift in Sources */,
+				ACADD36821CCAE5300F9906F /* AvatarPickerVC.swift in Sources */,
 				ACDC7A0D21CA19300052BFDC /* CreateAccountVC.swift in Sources */,
 				ACEFF70E21C9E32F005C5FC0 /* SWRevealViewController.m in Sources */,
 			);
