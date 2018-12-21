@@ -51,7 +51,6 @@ class AuthService {
         
         let lowercaseEmail = email.lowercased()
         
-        
         let body : [String: Any] = [
             
             "email" : lowercaseEmail,
@@ -85,26 +84,11 @@ class AuthService {
             
             if response.result.error == nil {
                 
-                //                if let json = response.result.value as? Dictionary<String, Any> {
-                //
-                //                    if let email = json["user"] as? String {
-                //                        self.userEmail = email
-                //                    }
-                //
-                //                    if let token = json["token"] as? String {
-                //                        self.authToken = token
-                //                    }
-                //}
                 guard let data = response.data else {return}
                 
-                do {
-                    let json = try JSON(data: data)
-                    self.userEmail = json["user"].stringValue
-                    self.authToken = json["token"].stringValue
-                } catch {
-                    
-                }
-                
+                let json = try! JSON(data: data)
+                self.userEmail = json["user"].stringValue
+                self.authToken = json["token"].stringValue
                 
                 self.isLogegdIn = true
                 completion(true)
@@ -118,5 +102,50 @@ class AuthService {
         
     }
     
+    
+    func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler)  {
+        
+        let lowercaseEmail = email.lowercased()
+        
+        let body : [String: Any] = [
+            
+            "name" : name,
+            "email" : lowercaseEmail,
+            "avatarName" : avatarName,
+            "avatarColor" : avatarColor
+        ]
+        
+        let header  = [
+            
+            "Content-Type" : "application/json; charset=utf-8",
+            "Authorization" : "Bearer \(AuthService.instance.authToken)"
+            
+        ]
+        
+        Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            
+            if response.result.error == nil {
+                
+                guard let data = response.data else {return}
+                
+                let json = try! JSON(data: data)
+                
+                let avatarColor = json["avatarColor"].stringValue
+                let avatarName = json["avatarName"].stringValue
+                let email = json["email"].stringValue
+                let name = json["name"].stringValue
+                let _id = json["_id"].stringValue
+                
+                UserDataService.instanse.setUserData(avatarColor: avatarColor, avatarName: avatarName, email: email, name: name, id: _id)
+                
+                completion(true)
+            } else {
+                completion(false)
+            }
+            
+            
+        }
+        
+    }
     
 }

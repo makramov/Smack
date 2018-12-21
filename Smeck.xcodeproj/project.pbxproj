@@ -14,6 +14,7 @@
 		AC9DF4DB21C9DBDD0060B89E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF4D921C9DBDD0060B89E /* Main.storyboard */; };
 		AC9DF4DD21C9DBDD0060B89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF4DC21C9DBDD0060B89E /* Assets.xcassets */; };
 		AC9DF4E021C9DBDD0060B89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF4DE21C9DBDD0060B89E /* LaunchScreen.storyboard */; };
+		ACADD36621CC95C000F9906F /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACADD36521CC95C000F9906F /* UserDataService.swift */; };
 		ACAF4D7D21C9DFC400FA1F70 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF4D7C21C9DFC400FA1F70 /* ChatVC.swift */; };
 		ACAF4D7F21C9DFD700FA1F70 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */; };
 		ACDC7A0621C9F4390052BFDC /* CustomGredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */; };
@@ -37,6 +38,7 @@
 		AC9DF4DC21C9DBDD0060B89E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9DF4DF21C9DBDD0060B89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9DF4E121C9DBDD0060B89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACADD36521CC95C000F9906F /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		ACAF4D7C21C9DFC400FA1F70 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		ACAF4D7E21C9DFD700FA1F70 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		ACDC7A0521C9F4390052BFDC /* CustomGredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGredient.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				AC05041A21CB4C8100815B9B /* AuthService.swift */,
+				ACADD36521CC95C000F9906F /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEFF71021C9E489005C5FC0 /* Smeck-Bridging-Header.h in Sources */,
+				ACADD36621CC95C000F9906F /* UserDataService.swift in Sources */,
 				ACEFF70F21C9E47B005C5FC0 /* SWRevealViewController.h in Sources */,
 				ACDC7A0B21CA0D080052BFDC /* LoginVCViewController.swift in Sources */,
 				ACAF4D7D21C9DFC400FA1F70 /* ChatVC.swift in Sources */,

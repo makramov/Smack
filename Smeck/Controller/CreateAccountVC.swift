@@ -9,35 +9,38 @@
 import UIKit
 
 class CreateAccountVC: UIViewController {
-
-//outlets
+    
+    //outlets
     
     @IBOutlet weak var userNameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var profileIconimg: UIImageView!
+    let avatarColor = "[0.5, 05, 05, 1]"
+    let avatarName = "default"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     
     //MARK: create account button
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
         guard let email = emailTxt.text, emailTxt.text != "" else {return}
         guard let password = passwordTxt.text, passwordTxt.text != "" else {return}
-        
+        guard let name = userNameTxt.text, userNameTxt.text != "" else {return}
         AuthService.instance.registerUser(email: email, password: password) { (success) in
             if success {
                 print("Successfully created user.")
                 AuthService.instance.loginUser(email: email, password: password, completion: { (success) in
-                    
                     if success {
-                       print("Logged in")
-                       print(AuthService.instance.authToken)
+                        AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
+                            print(name)
+                            self.performSegue(withIdentifier: gotoChannel, sender: nil)
+                        })
                     }
                 })
             }
@@ -57,5 +60,5 @@ class CreateAccountVC: UIViewController {
         performSegue(withIdentifier: gotoChannel, sender: self)
     }
     
-
+    
 }
