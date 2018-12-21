@@ -503,6 +503,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="oXu-f2-xM1" id="8W5-ax-8aV"/>
+                        <outlet property="segmentCL" destination="Bbz-4G-W2L" id="wHk-Pn-jTC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gO3-KT-LFv" userLabel="First Responder" sceneMemberID="firstResponder"/>

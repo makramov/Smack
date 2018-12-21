@@ -17,7 +17,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var profileIconimg: UIImageView!
     let avatarColor = "[0.5, 05, 05, 1]"
-    let avatarName = "default"
+    var avatarName = "profileDefault"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,13 @@ class CreateAccountVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if UserDataService.instanse.avatarName != "" {
+            profileIconimg.image = UIImage(named: UserDataService.instanse.avatarName)
+            avatarName = UserDataService.instanse.avatarName
+        }
+    }
     
     
     //MARK: create account button
