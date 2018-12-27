@@ -39,3 +39,9 @@ let HEADER = [
     "Content-Type" : "application/json; charset=utf-8"
     
 ]
+
+//variables
+
+let placeHolderColor = #colorLiteral(red: 0.5791940689, green: 0.1280144453, blue: 0.5726861358, alpha: 0.5)
+
+let NOTIF_USER_DID_CHANGE = Notification.Name("notifUserDidChange")

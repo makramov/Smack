@@ -63,7 +63,7 @@
                                     <action selector="loginButtonPressed:" destination="pQq-NB-a9M" eventType="touchUpInside" id="pVq-PC-IfE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2AU-jq-Qme">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2AU-jq-Qme" customClass="CustomUIImage" customModule="Smeck" customModuleProvider="target">
                                 <rect key="frame" x="15" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="8xr-W1-eyN"/>
@@ -363,7 +363,7 @@
                                     <action selector="generateBackgroungColorButtonPressed:" destination="LPK-4a-x4J" eventType="touchUpInside" id="Zun-Qg-bn5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smackProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2Zw-zw-hdF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smackProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2Zw-zw-hdF" customClass="CustomUIImage" customModule="Smeck" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="365" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1nn-6R-afv"/>
@@ -383,6 +383,10 @@
                                     <action selector="chooseAvatarButtonPressed:" destination="LPK-4a-x4J" eventType="touchUpInside" id="CPI-9k-5Hs"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-iS-2bj">
+                                <rect key="frame" x="169" y="325" width="37" height="37"/>
+                                <color key="color" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="0.69309182359999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -391,7 +395,9 @@
                             <constraint firstItem="joV-uL-cJL" firstAttribute="trailing" secondItem="TbY-Al-JbC" secondAttribute="trailing" constant="15" id="4w9-pB-i4c"/>
                             <constraint firstItem="x75-Mc-HaW" firstAttribute="centerX" secondItem="ghv-LL-uyE" secondAttribute="centerX" id="CSG-nx-9l9"/>
                             <constraint firstItem="QfD-q3-gY2" firstAttribute="centerX" secondItem="ghv-LL-uyE" secondAttribute="centerX" id="LDl-0H-tX5"/>
+                            <constraint firstItem="2j1-iS-2bj" firstAttribute="centerY" secondItem="ghv-LL-uyE" secondAttribute="centerY" constant="10" id="Mjg-MD-2nw"/>
                             <constraint firstItem="x75-Mc-HaW" firstAttribute="width" secondItem="2Zw-zw-hdF" secondAttribute="width" id="OPJ-V6-4T1"/>
+                            <constraint firstItem="2j1-iS-2bj" firstAttribute="centerX" secondItem="ghv-LL-uyE" secondAttribute="centerX" id="U2Y-ug-6sc"/>
                             <constraint firstItem="TbY-Al-JbC" firstAttribute="top" secondItem="joV-uL-cJL" secondAttribute="top" constant="15" id="UOa-DJ-1bz"/>
                             <constraint firstItem="x75-Mc-HaW" firstAttribute="top" secondItem="2Zw-zw-hdF" secondAttribute="top" id="dac-du-o2N"/>
                             <constraint firstItem="QfD-q3-gY2" firstAttribute="top" secondItem="joV-uL-cJL" secondAttribute="top" constant="60" id="kzV-WL-ICt"/>
@@ -405,6 +411,7 @@
                         <viewLayoutGuide key="safeArea" id="joV-uL-cJL"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="2j1-iS-2bj" id="gc7-GW-QeO"/>
                         <outlet property="emailTxt" destination="Xqz-Ee-K65" id="sec-a6-Me4"/>
                         <outlet property="passwordTxt" destination="51L-20-7Zr" id="JV0-0p-mYF"/>
                         <outlet property="profileIconimg" destination="2Zw-zw-hdF" id="zyY-ls-qkh"/>
@@ -470,7 +477,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yhP-WO-IDj">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yhP-WO-IDj" customClass="CustomUIImage" customModule="Smeck" customModuleProvider="target">
                                                     <rect key="frame" x="5" y="5" width="90" height="90"/>
                                                 </imageView>
                                             </subviews>
